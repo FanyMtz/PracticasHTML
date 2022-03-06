@@ -1,0 +1,168 @@
+<html>
+<head>
+    
+
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #header{
+            font-family: sans-serif,Arial, Helvetica, sans-serif;
+            width: 500px;
+            margin: auto;
+        }
+        ul, ol{
+            list-style: none;
+        }
+        .nav li a {
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        .nav li a:hover {
+            background-color: #000;
+        }
+        .nav > li {
+            float: left;
+        }
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 140px;
+        }
+        .nav li:hover > ul{
+            display: block;
+        }
+        .nav li ul li{
+            position: relative;
+        }
+        .nav li ul li ul{
+            right: -140px;
+            top: 0px;
+        }
+    </style>
+    
+</head>
+
+
+
+
+<body bgcolor="FFF5F3">
+    <br><div id="header">
+        <ul class="nav">
+            <li><a href="file:///C:/Users/manym/OneDrive/Escritorio/FrontEnd/HTML/Pasteleria.html">Inicio</a></li>
+            <li><a href="file:///C:/Users/manym/OneDrive/Escritorio/FrontEnd/HTML/Pasteles.html">Pasteles</a>
+              <li><a href="file:///C:/Users/manym/OneDrive/Escritorio/FrontEnd/HTML/Formulario.html">Compra</a></li>
+            
+            </li> 
+            <li><a href="file:///C:/Users/manym/OneDrive/Escritorio/FrontEnd/HTML/Inventario.html">Inventario</a></li>
+          </ul>
+    </div></br>
+
+    <table>
+        <br></br>
+        <br><center><h2>Formulario de compra</h2></center></br>
+        <tr>
+            <td><select name="Sabores">
+                <option value=0>Costo Sabores </option>
+                <option value=1>Chocolate $200
+                </option>
+                <option value=2>Vainilla $200</option>
+                <option value=3>Fresa $300</option>
+                <option value=4>Mantequilla $250</option>
+                <option value=5>Zanahoria $300</option>
+            </select></td>
+            <td><select name="Adornos">
+                <option value=0>Costo Adornos</option>
+                <option value=1>Fondant $150</option>
+                <option value=2>Crema de mantequilla $100</option>
+                <option value=3>Tinta comestible $80</option>
+                <option value=4>Listones $15 c/u</option>
+                <option value=5>Caramelos $10c/u</option>
+            </select></td>
+            <td></td>
+            
+        </tr>
+
+        <tr>
+            <br></br>
+            <td><label for="nombre">Nombre Completo:</label></td>
+            <td><br><input type="text" id="nombre" name="nombre"></body></br></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><label for="telefono">Teléfono de contacto:</label><br></td>
+            <td><br><input type="tel" id="telefono" name="telefono" maxlength="10"></br></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><label for="correo">Correo electronico</label><br></td>
+            <td><br><input type="email" id="correo" name="correo"></br></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><br><h4>Sabor para el pastel</h4></br></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox" id="Sabor1" name="Sabor1" value=0>Chocolate</label></td>
+            <td><label><input type="checkbox" id="Sabor2" name="Sabor2" value=1>Vainilla</label></td>
+            <td><label><input type="checkbox" id="Sabor3" name="Sabor3" value=2>Fresa</label></td>
+            <td><label><input type="checkbox" id="Sabor4" name="Sabor4" value=3>Mantequilla</label></td>
+            <td><label><input type="checkbox" id="Sabor5" name="Sabor5" value=4>Zanahoria</label></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td><br><h4>Adornos para el pastel</h4></br></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox" id="Adorno1" name="Adorno1" value=0>Fondant</label></td>
+            <td><label><input type="checkbox" id="Adorno2" name="Adorno2" value=1>Crema de Mantequilla</label></td>
+            <td><label><input type="checkbox" id="Adorno3" name="Adorno3" value=2>Tinta comestible</label></td>
+            <td><label><input type="checkbox" id="Adorno4" name="Adorno4" value=3>Listones</label></td>
+            <td><label><input type="checkbox" id="Adorno5" name="Adorno5" value=4>Caramelos</label></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td><br><label for="Desc">Comentarios acerca del pastel:</label></br></td>
+            <td><br><input type="text" id="Desc" name="Desc"></br></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><br><center><button type="button">Solicitar Pastel</button></center></br</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
