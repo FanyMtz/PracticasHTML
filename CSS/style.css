@@ -1,11 +1,214 @@
 /* CSS files agregan estilos de reglas para el contenido */
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 2em;
+    margin: 0em;
+    font-family: 'Libre Baskerville', serif;
 }
 
-h1 {
+h3 {
+    color: #6C9CED;
     font-style: italic;
-    color: blue;
+
+}
+/* selector es el .
+clase es el nombre despues del .
+*/
+
+.cover{
+    height: 400px;
+    background-image:url(assets/vquhB7YWIvM.jpg);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+}
+ /* toma todo lo que tiene cover en el cover-small*/
+.cover-small{
+    height: 200px;
+    background-blend-mode: normal;
+}
+
+.card{
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+
+}
+
+.card-title{
+    min-height: 3 rem;
+}
+
+.card-text{
+    min-height: 10rem;
+}
+
+
+.contact-wrap{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-in
+{
+    padding: 40px 30px;
+}
+
+/* acerca de las listas despegables los siguientes */
+.accordion{
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Quicksand',sans-serif;
+    background: #9FB6E4;
+}
+
+.accordion__label,
+.accordion__content {
+    padding: 14px 20px;
+}
+
+.accordion__label
+{
+    display: block;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+
+}
+
+.accordion__label:hover{
+    background: rgba(0,0,0,0.1);
+}
+
+.accordion__label::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+
+.accordion__content {
+    background: #ffffff;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+  }
+  
+  .accordion__input {
+    display: none;
+  }
+  
+  .accordion__input:checked ~ .accordion__content {
+    display: block;
+  }
+  
+  .accordion__input:checked ~ .accordion__label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+  }
+  
+  /* slider */
+  .slider{
+      width: 100%;
+      height:100px;
+      overflow: hidden;
+
+  }
+
+  .slider ul{
+      display: flex;
+      animation: cambio 20s infinite
+      alternate linear;
+      width: 300%;
+  }
+
+  .slider li{
+      width: 100%;
+      list-style: none;
+  }
+
+  .slider img{
+      width: 100%;
+      height: 100%;
+  }
+
+  @keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+  }
+
+  /*estilos pie de pagina*/
+
+.pie-pagina{
+    width: 100%;
+    background-color: #9FB6E4;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+    padding: 20px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 7px;
+
+}
+
+.pie-pagina .grupo-2{
+    background-color: #6C9CED;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+
+}
+
+@media  screen and (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
 }
