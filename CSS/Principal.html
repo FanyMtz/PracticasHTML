@@ -17,11 +17,263 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         
         <!--se importa la pagina web stylesheet -->
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="C:\Users\manym\OneDrive\Escritorio\FrontEnd\Practicacss\style.css">
+    
+        <!--tipo de letra Libre Baskerville-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     </head>
     <!--Todo lo que se ve dentro de la pagina web -->
     <body>
-        <p>Vacunas MX</p>
         
+        <!--encabezado de la pagina -->
+        <header>
+            
+              <!--Barra de navegación-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Vacunas MX</a>
+                <!--Menú-->
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#">Base de datos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Regulaciónes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Noticias falsas</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--titulo y texto-->
+            <div class="cover d-flex justify-content-center align-items-start flex-column">
+                <h1>Combate el virus con las vacunas</h1>
+                <p>Detengamos esta pandemia!, Matando el virus con la vacuna!!!</p>
+                <button class="btn btn-light">Conoce mas</button>
+            </div>
+        </header>
+        <!-- tarjetas-->
+        <section>
+            <center><figure class="main-brads">
+                <img src="assets/astrazeneca.png" alt="AstraZeneca" width="250px">
+                <img src="assets/pfizer.png" alt="Pfizer" width="240px">
+                <img src="assets/moderna.png" alt="Moderna" width="220px">
+                <img src="assets/sinovac.png" alt="Sinovac" width="220px">
+            </figure></center>
+
+            <div class="container mt-5 mb-5">
+            <b><h3 mt-2>¿Porqué deberia vacunarme?</h3></b>
+            <p>Para evitar cualquier duda sobre la vacunación contra el COVID-19, identifique los siguientes 4 beneficios de la vacunación contra el COVID-19 </p>
+            </div>
+
+            <div class="container mt-5 mb-5">
+                <!--filas-->
+                <div class="row justify-content-center">
+                    <!--columna-->
+                    <!--col-12 ocupa todo lo disponible-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                        <div class="card">
+                            <div class="cover cover-small" title="Propagacion virus" style="background-image:url(assets/propagacion.jpg)">
+
+                            </div>
+                           <div class="card-body">
+                            <h5 class="card-title">Minimizar la propagación de virus</h5>
+                            <p class="card-text">La vacuna ha demostrado ser efectiva para evitar que alguien se infecte con Coronavirus.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                        <div class="card">
+                            <div class="cover cover-small" title="Anticuerpos" style="background-image:url(assets/anticuerpos.jpg)">
+
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Formando anticuerpos</h5>
+                            <p class="card-text">Se ha demostrado que la vacuna COVID-19 ayuda a dar forma a la respuesta de anticuerpos para el sistema inmunológico.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--alineacion de las imagenes dependiendo de la pantalla-->
+                    <!--col-sm md lg y margen mt-->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                        <div class="card">
+                            <div class="cover cover-small" title="Protegiendo a las personas cercanas" style="background-image:url(assets/personas.jpg)">
+
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Protegiendo a las personas cercanas</h5>
+                            <p class="card-text">Los beneficios de la vacunación contra el COVID-19 son que la vacuna que recibimos también puede ayudar a proteger a las personas que nos rodean.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                        <div class="card">
+                            <div class="cover cover-small" title="Inmunidad grupos" style="background-image:url(assets/grupos.jpg)">
+
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Crear inmunidad de grupo</h5>
+                            <p class="card-text">La vacunación contra el COVID-19 también es beneficiosa para crear inmunidad grupal o inmunidad colectiva.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="container mt-5 mb-5">
+                <b><h3>Preparación despues de la vacuna</h3></b>
+                <p>El éxito de las vacunas está fuertemente influenciado por la fortaleza del sistema inmunológico del cuerpo. por lo tanto, hay varias cosas que se pueden intentar para que la vacuna contra el COVID-19 funcione: </p>
+            
+
+                <table width = "100%" border = "0">
+            
+                    <tr valign = "top">
+                    <td >
+                        <div class="cover" title="Mujer" style="background-image:url(assets/woman.jpg)" width="80px" height="80px"></div>
+                    </td>
+                            <td  width = "250px">
+                                <div class="accordion">
+                                    <div>
+                                        <input type="radio" name="prepare_accordion" id="section1" class="accordion__input">
+                                        <!--titulo-->
+                                        <label for="section1" class="accordion__label">Evitar bebidas alcoholicas</label>
+                                        <div class="accordion__content">
+                                            <p>
+                                                El consumo excesivo de alcohol a largo plazo sí puede suprimir al sistema inmunitario e interferir en la respuesta a la vacuna, lo que provocaría que el organismo tarde semanas en generar los niveles protectores de anticuerpos contra el COVID-19 incluso después de la aplicación de la vacuna.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="prepare_accordion" id="section2" class="accordion__input">
+                                        <!--titulo-->
+                                        <label for="section2" class="accordion__label">Evitar estresarse</label>
+                                        <div class="accordion__content">
+                                            <p>
+                                                El estrés tiene un efecto profundo en el trabajo inmunológico. Además, el estrés prolongado puede aumentar la producción de cortisol y el estrés oxidativo en el cuerpo. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="prepare_accordion" id="section3" class="accordion__input">
+                                        <!--titulo-->
+                                        <label for="section3" class="accordion__label">Comer saludable</label>
+                                        <div class="accordion__content">
+                                            <p>
+                                                Se recomienda consumir entre 3 a 5 raciones de frutas, verduras y hortalizas diarias. Además, de consumir carne de pollo, pavo y pescado, y reducir el consumo de sal y azúcar.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="prepare_accordion" id="section4" class="accordion__input">
+                                        <!--titulo-->
+                                        <label for="section4" class="accordion__label">Dormir lo suficiente</label>
+                                        <div class="accordion__content">
+                                            <p>
+                                                La falta de sueño puede provocar una pobre respuesta a la vacuna contra el COVID-19, por lo que se solicita tomar en cuenta este aspecto.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="prepare_accordion" id="section5" class="accordion__input">
+                                        <!--titulo-->
+                                        <label for="section5" class="accordion__label">Realizar ejercicio o actividad fisica</label>
+                                        <div class="accordion__content">
+                                            <p>
+                                                Realizar ejercicio de bajo impacto después de ser vacunado contra el Covid-19 aumenta la producción de anticuerpos, lo que genera una mejor respuesta inmune.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </td>
+                    </tr>
+                
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mt-5 mb-5">
+                <b><h3>Contacto de Emergencia</h3></b>
+                <p>Comuníquese con uno de los contactos a continuación si usted o su familia se sienten mal y tienen síntomas similares, como COVID-19, asegúrese de cuidarse también antes de informarnos: </p>
+                
+                <table width = "100%" border = "0">
+         
+                    <tr valign = "top">
+                       <td width = "250px">
+                            <p></p>
+                            <b>Telefono</b><br/>
+                            021-123-145-14<br/>
+                            <button class="btn btn-light" >Llama ahora</button><br/>
+                            <p></p>
+                            <p></p>
+                            <b>Chat</b><br />
+                            021-123-145-14<br />
+                            <button class="btn btn-light">Ingresa al Chat</button><br/>
+                      
+                            <td  width = "250px">
+                                <p></p>
+                                <b>Videollamada</b><br/>
+                                021-123-145-14<br />
+                                <button class="btn btn-light">Inicia una Videollamada</button><br/>
+                                <p></p>
+                                <p></p>
+                                <b>Mensajes</b><br />
+                                021-123-145-14<br />
+                                <button class="btn btn-light">Envia un mensaje</button>
+                            </td>
+                       
+                            <td>
+                                <div class="cover" title="Doctor" style="background-image:url(assets/doctor.jpg)" width="80px" height="80px"></div>
+                            </td>
+                       </td>
+                    </tr>
+                    
+                 </table>
+            
+            </div>
+        </section>
+
+        <!--pie de pagina-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>ACERCA</h2>
+                <p>Sobre Nosotros </p></br>
+                <p>Caracteristicas </p></br>
+                <p>Noticias & Blog </p>
+            </div>
+
+            <div class="box">
+                <h2>COMPAÑIA</h2>
+                <p>¿Como Trabajamos? </p></br>
+                <p>Capital </p></br>
+                <p>Seguridad </p>
+            </div>
+
+            <div class="box">
+                <h2>APOYO</h2>
+                <p>FAQs</p></br>
+                <p>Centro de apoyo </p></br>
+                <p>Contactanos </p>
+            </div>
+            
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2021 <b> Vacunas MX</b>. All right reserved</small>
+        </div>
+    </footer>
     </body>
 </html>
