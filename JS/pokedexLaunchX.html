@@ -5,15 +5,288 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex LaunchX</title>
-    
+     <!--referencia al css-->
+     <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <h1>Pokedex Launchex</h1>
+<body background="assets/paisajes.png">
+    <br>
+   <center> <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/269px-International_Pok%C3%A9mon_logo.svg.png"
+        height="100%"
+        alt="logo"
+      /></center>
+      <br>
     <!--el placeholder es el ejemplo que le muestra al usuario-->
-    <input type="text" placeholder="pikachu" id="Pokename" name="Pokename"><br>
-    <img src="assets/pokebola.png" alt="Pokemon" id="pokeImg" width="300px"><br>
+    <!--<input type="text" placeholder="pikachu" id="Pokename" name="Pokename">-->
+    <!--<img src="assets/pokebola.png" alt="Pokemon" id="pokeImg" width="300px"><br>-->
     <!--onClick llama a la funcion imprimir de js-->
-    <button onclick="fetchPokemon()">Cambiar pokemon</button>
+    <!--<button onclick="fetchPokemon()">Cambiar pokemon</button>-->
+
+
+    <!-- estructura del pokedex-->
+    <div id="pokedex">
+        <!--Panel izquierdo -->
+        <div id="left-panel">
+
+            <!--contenedor de las luces de arriba -->
+            <div class="left-top-container">
+                <svg height="300" width="525" class="left-svg">
+                    <!--linea negra que divide la parte del foco y las luces -->
+                    <polyline
+                        points="0,75 70,75 90,38 300,38"
+                        style="fill: none; stroke: black; stroke-width: 3"
+                    />
+                </svg>
+                <!--circulo grande-->
+                <div class="lights-container">
+                    <!--circulo fondo blanco-->
+                    <div class="big-light-boarder">
+                        <!--circulo azul-->
+                        <div class="big-light blue">
+                            <!--circulo de reflejo-->
+                            <div class="big-dot light-blue"></div>
+                        </div>
+                    </div>
+                    <!--circulos pequeños -->
+                    <div class="small-lights-container">
+                        <!--circulo rojo -->
+                        <div class="small-light red">
+                            <div class="dot light-red"></div>
+                        </div>
+                        <!--circulo amarillo -->
+                        <div class="small-light yellow">
+                            <div class="dot light-yellow"></div>
+                        </div>
+                        <!--circulo verde -->
+                        <div class="small-light green">
+                            <div class="dot light-green"></div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+            <!--centro de la pantalla en donde va la imgen del pokemon -->
+            <div class="screen-container">
+                <!--clase de la pantalla -->
+                <div class="screen">
+                    <!--luces de la pantalla superior -->
+                    <div class="top-screen-lights">
+                        <!--luces rojas pequeñas -->
+                        <div class="mini-light red"></div>
+                        <div class="mini-light red"></div>
+                    </div>
+                    <!--imagen de prueba -->
+                    <div id="main-screen">
+                        <center><img src="assets/pokebola.png" alt="Pokemon" id="pokeImg" width="150px"></center>
+                        <center><p id="Pokemon">Pokemon</pid>
+                        </p></center>
+                        
+                        
+                    </div>
+                    <!--boton rojo -->
+                    <div class="bottom-screen-lights">
+                        <div class="small-light red">
+                            <div class="dot light-red"></div>
+                    </div>
+                    <!--lineas negras que estan en el cuadro de la imagen -->
+                    <div class="burger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--contenedor de Botones -->
+        <div class="buttons-container">
+            <div class="upper-buttons-container">
+                <!--boton grande gris -->
+                <div class="big-button">
+                    <br>
+                    <p  type="button" onclick="fetchPokemon()">Buscar</p>
+                    
+                </div>
+                <!-- contenedor del boton rojo y azul que se encuentra debajo de la imagen-->
+                <div class="long-buttons-container">
+                     <!--boton rojo -->
+                    <div class="long-button red"></div>
+                     <!--boton azul -->
+                    <div class="long-button light-blue"></div>
+                </div>
+        </div>
+        <!--contenedor de los botones de navegador  -->
+        <div class="nav-buttons-container">
+            <!--dos puntos debajo del boton gris -->
+            <div class="dots-container">
+                <div>.</div>
+                <div>.</div>
+              </div>
+              <!--pantalla en donde escribira el usuario -->
+              <div class="green-screen">
+                  
+                <!-- escribe el usuario para buscar-->
+                <input type="text" placeholder="pikachu" id="Pokename" name="Pokename">
+              </div>
+              <div class="right-nav-container">
+                <div class="nav-button">
+                    <!--boton silueta circulo -->
+                    <div class="nav-center-circle"></div>
+                    <!--botones para formar la cruz -->
+                    <div class="nav-button-vertical"></div>
+                    <div class="nav-button-horizontal">
+                        <!-- se borra la conexion de arriba de los botones-->
+                        <div class="border-top"></div>
+                        <!--se borra la conexion de abajo de los botones -->
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+                <!-- contenedor de botones que se encuentran debajo de la cruz-->
+                <div class="bottom-right-nav-container">
+                    <!--boton luz roja -->
+                    <div class="small-light red">
+                        <!--brillo blanco del boton rojo -->
+                        <div class="dot light-red"></div>
+                    </div>
+                    <!--botones negros -->
+                    <div class="dots-container">
+                        <div class="black-dot">.</div>
+                        <div class="black-dot">.</div>
+                        <div class="black-dot">.</div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--Panel derecho -->
+        <div id="right-panel">
+            <!--delineado negro parte inferior-->
+            <div class="empty-container">
+                <!-- -->
+                <svg height="100%" width="100%">
+                    <!--corte de la forma de la parte superior -->
+                    <polyline
+                    points="0,0 0,40 138,40 158,75 280,75 6000,0 0,0"
+                    style="fill: #f2f2f2; stroke: none; stroke-width: 3"
+                    />
+                    <!--delineado negro parte superior -->
+                    <polyline
+                    points="0,40 138,40 158,75 350,75"
+                    style="fill: none; stroke: black; stroke-width: 3"
+                />
+                </svg>
+            </div>
+        <!-- parte superior-->
+        <div class="top-screen-container">
+            <!--cuadro superior -->
+            <div id="about-screen" class="right-panel-screen">
+                <div class="stats1 flexContainer">
+                    <table>
+                        <tr>
+                            <td><h3>Movimientos: </k3></td>
+                            <td><p id="PokeMov"> </p>
+                            </td>
+                          </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><img class="icon0" src="https://cdn-icons-png.flaticon.com/128/1673/1673640.png" width="20px" height="20px"></td>
+                            <td><img class="icon0" src="https://img.icons8.com/ios/2x/sword.png" width="20px" height="20px"></td>
+                            <td><img class="icon0" src="https://img.icons8.com/dotty/2x/knight-shield.png" width="20px" height="20px"></td>
+                            <td><img class="icon0" src="https://img.icons8.com/ios-filled/2x/sword.png" width="20px" height="20px"></td>
+                            <td><img class="icon0" src="https://img.icons8.com/ios-filled/2x/knight-shield.png" width="20px" height="20px"></td>
+                            <td><img class="icon0" src="https://img.icons8.com/external-line-lima-studio/2x/external-speed-5g-signal-line-lima-studio-2.png" width="20px" height="20px"></td>
+                        </tr>
+                        <tr>
+                            <td><p id="hp">00</p></td>
+                            <td><p id="attack">00</p></td>
+                            <td><p id="defense">00</p></td>
+                            <td><p id="specialAttack">00</p></td>
+                            <td><p id="specialDefense">00</p></td>
+                            <td><p id="speed">00</p></td>
+                        </tr>
+                        <tr>
+                            <td>Ps</td>
+                            <td>Atk</td>
+                            <td>Def</td>
+                            <td>Sp.Atk</td>
+                            <td>Sp.Def</td>
+                            <td>Speed</td>
+                        </tr>
+                    </table>
+
+                </div>
+                
+            </div>
+        </div>
+        <!--botones cuadrados  -->
+        <div class="square-buttons-container">
+            <!--botones cuadrados  azules-->
+            
+            <div class="blue-squares-container">
+                <div class="blue-square"></div>
+                <div class="blue-square"></div>
+                <div class="blue-square"></div>
+                <div class="blue-square"></div>
+                <div class="blue-square"></div>
+                <div class="blue-square"></div>
+                <div class="blue-square"></div>
+                <div class="blue-square"></div>
+                <div class="blue-square"></div>
+                <div class="blue-square"></div>
+            </div>
+            </div>
+            <!--centra los botones -->
+            <div class="center-buttons-container">
+                <div class="center-left-container">
+                    <div class="small-reds-container">
+                        <!--boton rojo-->
+                        <div class="small-light red">
+                            <div class="dot light-red"></div>  
+                        </div>
+                        <!--boton rojo-->
+                        <div class="small-light red">
+                            <div class="dot light-red"></div>
+                        </div>
+                    </div>
+                    <!-- contenedor de los cuadrados blancos-->
+                    <div class="white-squares-container">
+                        <!--cuadros blancos-->
+                        <div class="white-square"></div>
+                        <div class="white-square"></div>
+                    </div>
+                </div>
+                <!--contenedor de la izquierda -->
+                <div class="center-right-container">
+                    <!--contenedor de botones delgados-->
+                    <div class="thin-buttons-container">
+                        <!-- botones delgados-->
+                        <div class="thin-button"></div>
+                        <div class="thin-button"></div>
+                    </div>
+                    <!--boton amarillo-->
+                    <div class="yellow-button yellow">
+                        <div class="big-dot light-yellow"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- botones de la pantalla inferior-->
+            <div class="bottom-screens-container">
+                <div id="type-screen" class="right-panel-screen">
+                    <p id="pokeType"> Tipo</p>
+                </div>
+                <div id="id-screen" class="right-panel-screen">
+                </div>
+            </div>
+            </div>
+        </div>
+<br>
+
+
+
+
+
 </body>
 <!--como se lee de abajo hacia arriba por eso se declara el api para que pueda realizar las modificaciones correspondientes-->
 <footer>
