@@ -1,0 +1,4 @@
+A continuación dejo el repositorio del POKEDEX que cree
+esto con el fin de si no se realizo alguna ultima actualizacion en este apartado
+se podra ver el completo con el siguiente enlace.
+https://github.com/FanyMtz/Pokedex
